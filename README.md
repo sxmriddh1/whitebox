@@ -1,4 +1,4 @@
-context:
+context (read if you want some conceptual briefing, or if you just have time):
 
 as sophisticated and cognitive as they get, powering complex models and serving as the brains while making hundreds and thousands of decisions internally to collapse massive input data into one or more simple outputs, deep learning algorithms are infamous for their decades long, black box problem. 
 
