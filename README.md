@@ -1,4 +1,24 @@
-context (read if you want some conceptual briefing, or if you just have time):
+# whitebox
+
+## problem domain(s):
+ai security, ai reliability, cybersecurity, information security, deep learning, explainable ai (XAI)
+
+## problem statement:
+deployed machine and deep learning systems increasingly lean on explanation (XAI) tools such as  **SHAP (SHapley Additive exPlanations)** and **LIME (Local Interpretable Model-agnostic Explanations)** to elucidate and justify the model's decision making process and internal workings to auditors and analysts, turning an incomprehensible 'black box' into a more interpretable 'glass box' that provides deeper insights and reasoning concerned with how the ML/DL model arrived at an accurate output.
+
+now, the mechanisms behind the working of these industry level tools primarily include perturbing (making deliberate changes) the model's inputs and noticing how the output changes. a threat actor may look for exactly such an entry point - training a model that can detect when it's being probed by these perturbations, and behaving differently in that moment. this can lead to creation of vital blind spots, that may change the narrative of the entire explanation, as the model may actually learn illegitimate patterns in training data and produce corrupt or biased answers while smartly and confidently blaming some other, irrelevant or unrelated feature for the output as a facade - letting incorrect, biased, or outright malicious behavior hide behind an explanation that looks perfectly plausible on the surface to the human factor *relying* on that very algorithm.
+
+this raises a huge security question, as such blind spots or extensive trust on these precisely manipulatable tools can affect organisations, infrastructure or millions of users and put them at a risk or susceptible to some kind of loss.
+
+## solution: 
+
+## installation: 
+
+## utilisation:
+
+## tech stack
+
+## context (read if you want some conceptual briefing, or if you just have time):
 
 as sophisticated and cognitive as they get, powering complex models and serving as the brains while making hundreds and thousands of decisions internally to collapse massive input data into one or more simple outputs, deep learning algorithms are infamous for their decades long, black box problem. 
 
@@ -14,3 +34,16 @@ this isn't a question about functionality; yes, these currently available tools 
 
 this isn't hypothetical. researchers have already demonstrated that SHAP and LIME are vulnerable to adversarially constructed classifiers: an attacker can build a model that exploits how these tools sample and perturb data, behaving fairly when the explainer is probing it, but discriminating on protected attributes in normal operation, without the explanation ever revealing the deception. what would it take for one, very talented attacker to manipulate the entire XAI pipeline to cover his tracks and maintain persistence to his malice? my undergrad in cybersecurity may have taught me to be more skeptical, because when one tool or service carries the responsibility of reputed organisations having millions of clients, there must be absolutely no room for error. ***zero trust, as they call it, never trust and always verify.***
 
+## research papers:
+
+## research papers:
+
+1. Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods – *Dylan Slack, Sophie Hilgard, Emily Jia, Sameer Singh, and Himabindu Lakkaraju* ([read here](https://arxiv.org/abs/1911.02508))
+2. SHLIME: Foiling Adversarial Attacks Fooling SHAP and LIME – *Sam Chauhan, Estelle Duguet, Karthik Ramakrishnan, Hugh Van Deventer, Jack Kruger, and Ranjan Subbaraman* ([read here](https://arxiv.org/abs/2508.11053))
+3. Adversarial Robust and Explainable Network Intrusion Detection Systems Based on Deep Learning – *Kudzai Sauka, Gun-Yoo Shin, Dong-Wook Kim, and Myung-Mook Han* ([read here](https://doi.org/10.3390/app12136451))
+4. Robust Intrusion Detection System with Explainable Artificial Intelligence – *Betül Güvenç Paltun, Ramin Fuladi, and Rim El Malki* ([read here](https://arxiv.org/abs/2503.05303))
+5. Explainable AI-Based Intrusion Detection Systems for Industry 5.0 and Adversarial XAI: A Systematic Review – *Naseem Khan, Kashif Ahmad, Aref Al-Tamimi, Mohammed M. Alani, Amine Bermak, and Issa Khalil* ([read here](https://www.mdpi.com/2078-2489/16/12/1036))
+
+
+## contributors and project timeline:
+created by: samriddhi guha (samriddhiguha777@gmail.com) 
