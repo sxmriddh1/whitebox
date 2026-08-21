@@ -1,0 +1,25 @@
+# Secrets — never commit these
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Whitebox outputs — generated per-run, not source
+whitebox_report/
+examples/demo/
+
+# Model artifacts — usually large and/or user-specific
+*.pkl
+*.h5
+*.joblib
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
