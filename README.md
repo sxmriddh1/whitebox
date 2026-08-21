@@ -127,7 +127,8 @@ this isn't hypothetical. researchers have already demonstrated that SHAP and LIM
 3. Adversarial Robust and Explainable Network Intrusion Detection Systems Based on Deep Learning – *Kudzai Sauka, Gun-Yoo Shin, Dong-Wook Kim, and Myung-Mook Han* ([read here](https://doi.org/10.3390/app12136451))
 4. Robust Intrusion Detection System with Explainable Artificial Intelligence – *Betül Güvenç Paltun, Ramin Fuladi, and Rim El Malki* ([read here](https://arxiv.org/abs/2503.05303))
 5. Explainable AI-Based Intrusion Detection Systems for Industry 5.0 and Adversarial XAI: A Systematic Review – *Naseem Khan, Kashif Ahmad, Aref Al-Tamimi, Mohammed M. Alani, Amine Bermak, and Issa Khalil* ([read here](https://www.mdpi.com/2078-2489/16/12/1036))
-## license
+
+## license:
  
 MIT — see `LICENSE`.
  
