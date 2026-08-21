@@ -132,6 +132,8 @@ this isn't hypothetical. researchers have already demonstrated that SHAP and LIM
 MIT — see `LICENSE`.
  
 ## contributors and project timeline:
-created by: samriddhi guha (samriddhiguha777@gmail.com)
+created by: samriddhi guha (samriddhiguha777@gmail.com) 
+
 timeline: july 28 2026 - present
+
  
