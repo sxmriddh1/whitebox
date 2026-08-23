@@ -10,11 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-<<<<<<< HEAD
-    { name = "Your Name" }
-=======
     { name = "Samriddhi Guha" }
->>>>>>> 3448f6610d254d4417b34551541c066fc1e6bbf6
 ]
 dependencies = [
     "numpy>=1.24",
