@@ -1,5 +1,8 @@
 # whitebox
- 
+<a href="https://whitebox-iota.vercel.app/" target="_blank">
+  <img width="1400" height="700" alt="hellowhitebox" src="https://github.com/user-attachments/assets/2f9011ad-47ba-414b-adae-61d762d8055e" />
+</a>
+
 ## problem domain(s):
 ai security, ai reliability, cybersecurity, information security, deep learning, explainable ai (XAI)
 ## problem statement:
@@ -21,7 +24,14 @@ once connected, whitebox runs a fixed five-phase audit:
 4. **attack** — two adversarial audits: an **evasion attack** (nudging top-SHAP features to try to flip a borderline decision) and an **explanation-manipulation attack** (pushing a currently-irrelevant decoy feature to try to hijack the *stated reason* for a decision while the verdict itself stays fixed — the core vulnerability this project investigates).
 5. **defend** — three candidate defenses (small-noise smoothing, large-noise smoothing, clipping) are evaluated against the explanation-manipulation attack and compared honestly against the undefended baseline. no defense is assumed to work — if a run shows no improvement, that's reported as-is.
 output is written as a narrated terminal report plus `report.txt`, `report.json`, and `surrogate_rules.txt` — a compliance team can read the terminal output, a script can consume the json.
- 
+
+## visit:
+take a look at the whitebox website that explains this project! ([click me!](https://whitebox-iota.vercel.app/))
+<a href = "https://whitebox-iota.vercel.app/" target="_blank">
+ <img width="1400" height="700" alt="expwhitebox" src="https://github.com/user-attachments/assets/9d9daa29-1bad-43df-ba8e-79ec7112eba8" />
+</a>
+
+
 ## phase wise flow:
  
 | Phase | What happens |
