@@ -3,23 +3,12 @@ export default function Author() {
     <section id="author">
       <div className="section-head">
         <div className="kicker">contributors</div>
-        <h2>about the author.</h2>
+        <h2>author's note</h2>
       </div>
       <div className="author-card no-lc" style={{ borderStyle: 'solid' }}>
-        <p>Samriddhi Guha</p>
+        <p>samriddhi guha</p>
         <p style={{ textAlign: 'justify' }}>
-          Thanks for visiting! Working on <strong>Whitebox</strong> was a real journey. I spent
-          almost a month trying to learn this project inside out, getting into the core of Deep
-          Learning and Explainable AI, watching dozens of videos, reading books, and finding
-          answers to all my silly questions (courtesy of my beloved Claude). Every step towards
-          learning AI gives you a new perspective — a broader thinking sense and the courage to
-          ask questions about anything and everything. I also kept second-guessing my way into
-          what I already knew, and after an endless tedium of making notes and redoing parts of
-          this project, I have arrived at this little win. I will, of course, keep working on
-          improving Whitebox and making new additions in the future, which you can directly see
-          on my GitHub and this website. If you have any suggestions, feedback, or areas of
-          improvement, feel free to reach out to me on any of my socials! I would love to connect
-          and have a chat.
+          thanks for visiting! working on whitebox was a real journey. i spent almost a month trying to learn this project inside out, getting into the core of deep learning and explainable ai, watching dozens of videos, reading books, and finding answers to all my silly questions (courtesy of my beloved claude). every step towards learning ai gives you a new perspective — a broader thinking sense and the courage to ask questions about anything and everything. i also kept second-guessing my way into what i already knew, and after an endless tedium of making notes and redoing parts of this project, i have arrived at this little win. i will, of course, keep working on improving whitebox and making new additions in the future, which you can directly see on my github and this website. if you have any suggestions, feedback, or areas of improvement, feel free to reach out to me on any of my socials! i would love to connect and have a chat. 
         </p>
         <p style={{ fontSize: '.9rem', color: 'var(--ink-faint)' }}>
           [{' '}
