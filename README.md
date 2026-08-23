@@ -119,7 +119,12 @@ this isn't a question about functionality; yes, these currently available tools 
 - how do we know that the model is not secretly learning illegal patterns to provide biased results but pointing to irrelevant features and convincing the reader to look away from the actual problem?
 this isn't hypothetical. researchers have already demonstrated that SHAP and LIME are vulnerable to adversarially constructed classifiers: an attacker can build a model that exploits how these tools sample and perturb data, behaving fairly when the explainer is probing it, but discriminating on protected attributes in normal operation, without the explanation ever revealing the deception. what would it take for one, very talented attacker to manipulate the entire XAI pipeline to cover his tracks and maintain persistence to his malice? my undergrad in cybersecurity may have taught me to be more skeptical, because when one tool or service carries the responsibility of reputed organisations having millions of clients, there must be absolutely no room for error. ***zero trust, as they call it, never trust and always verify.***
  
- 
+## limitations:
+
+- the permutation-importance fallback (used automatically if `shap` isn't installed) is a rough approximation, not a substitute for real SHAP values — it's clearly labeled in every report it appears in, and should not be used for any report you intend to publish or rely on.
+- `--decoy-alpha` and other attack parameters are tuned for standardized (mean-0, std-1) feature spaces. re-tune them if your data isn't scaled that way.
+- no defense in `defenses.py` is guaranteed to work on your model. if your results show no defense beating baseline, that's a legitimate finding consistent with adversarial robustness in XAI being an open research problem — not a bug in this tool.
+- whitebox audits *explanation trustworthiness*. it does not audit model accuracy, fairness metrics, or data quality — those need their own tooling.
 ## research papers:
  
 1. Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods – *Dylan Slack, Sophie Hilgard, Emily Jia, Sameer Singh, and Himabindu Lakkaraju* ([read here](https://arxiv.org/abs/1911.02508))
@@ -127,11 +132,14 @@ this isn't hypothetical. researchers have already demonstrated that SHAP and LIM
 3. Adversarial Robust and Explainable Network Intrusion Detection Systems Based on Deep Learning – *Kudzai Sauka, Gun-Yoo Shin, Dong-Wook Kim, and Myung-Mook Han* ([read here](https://doi.org/10.3390/app12136451))
 4. Robust Intrusion Detection System with Explainable Artificial Intelligence – *Betül Güvenç Paltun, Ramin Fuladi, and Rim El Malki* ([read here](https://arxiv.org/abs/2503.05303))
 5. Explainable AI-Based Intrusion Detection Systems for Industry 5.0 and Adversarial XAI: A Systematic Review – *Naseem Khan, Kashif Ahmad, Aref Al-Tamimi, Mohammed M. Alani, Amine Bermak, and Issa Khalil* ([read here](https://www.mdpi.com/2078-2489/16/12/1036))
-## license
+
+## license:
  
 MIT — see `LICENSE`.
  
 ## contributors and project timeline:
-created by: samriddhi guha (samriddhiguha777@gmail.com)
+created by: samriddhi guha (samriddhiguha777@gmail.com) 
+
 timeline: july 28 2026 - present
+
  
